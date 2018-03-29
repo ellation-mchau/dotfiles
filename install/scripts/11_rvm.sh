@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -euxo pipefail
+
 brew install gpg
 
 curl -sSL https://rvm.io/mpapis.asc | gpg --import -

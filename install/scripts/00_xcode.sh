@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -euxo pipefail
+
 check_install() {
   read -p "Did you install XCODE (y/N)? " choice
   case "$choice" in 
