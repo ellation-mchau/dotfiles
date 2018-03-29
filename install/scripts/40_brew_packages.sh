@@ -4,6 +4,7 @@ set -euxo pipefail
 
 brew install packer
 brew install wget
+brew install jq
 
 brew cask install java
 
