@@ -1,0 +1,12 @@
+[push]
+  default = simple
+[interactive]
+  singleKey = true
+[core]
+  editor = 'vim'
+[alias]
+  hide = update-index --assume-unchanged
+  unhide = update-index --no-assume-unchanged
+  doff = reset HEAD^
+[url "git@github.com:"]
+  insteadOf = "https://github.com/"
