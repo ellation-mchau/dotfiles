@@ -1,6 +1,6 @@
 export CHEF_HOME=/opt/chefdk
 export RUBY_HOME=/opt/chefdk/embedded
-export PATH=$HOME/workspace/dist:$CHEF_HOME/bin:$RUBY_HOME/bin:/usr/local/opt/gnu-tar/libexec/gnubin:/usr/local/bin:$PATH:$HOME/.rvm/bin
+export PATH=$HOME/workspace/dist:$HOME/.rvm/bin:$CHEF_HOME/bin:$RUBY_HOME/bin:/usr/local/opt/gnu-tar/libexec/gnubin:/usr/local/bin:$PATH
 export MANPATH="/usr/local/opt/gnu-tar/libexec/gnuman:$MANPATH"
 
 shopt -s histappend
