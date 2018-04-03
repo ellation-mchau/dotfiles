@@ -57,3 +57,7 @@ alias du='du -ch'
 export CLICOLOR=YES
 
 [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
+
+complete -C '/usr/local/bin/aws_completer' aws
+
+alias venv-load='source ./venv/bin/activate'
