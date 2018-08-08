@@ -3,13 +3,22 @@ export RUBY_HOME=/opt/chefdk/embedded
 export PATH=$HOME/workspace/dist:$HOME/.rvm/bin:$CHEF_HOME/bin:$RUBY_HOME/bin:/usr/local/opt/gnu-tar/libexec/gnubin:/usr/local/bin:$PATH
 export MANPATH="/usr/local/opt/gnu-tar/libexec/gnuman:$MANPATH"
 
+export NVM_DIR="$HOME/.nvm"
+. "/usr/local/opt/nvm/nvm.sh"
+
+export GOROOT=$HOME/workspace/go
+
+export VAGRANT_SERVER_URL=https://vagrantcloud.com
+
 shopt -s histappend
 export HISTFILESIZE=
 export HISTSIZE=
 export HISTTIMEFORMAT="[%D %r (%a)] "
 export HISTFILE=~/.bash_eternal_history
 
-PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
+export PROMPT_COMMAND="history -a; $PROMPT_COMMAND"
+
+export EF_SITE_REPO=ellation_formation
 
 source $HOME/.bash_lib/z/z.sh
 
@@ -60,4 +69,6 @@ export CLICOLOR=YES
 
 complete -C '/usr/local/bin/aws_completer' aws
 
+alias venv-init='virtualenv venv && source ./venv/bin/activate'
+alias venv-init3='virtualenv venv -p python3.6 && source ./venv/bin/activate'
 alias venv-load='source ./venv/bin/activate'
